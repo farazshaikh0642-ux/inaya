@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Sweet wify Haleema 💖</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #ffe6f2, #ffd6e7, #ffeaf2);
+    overflow-x: hidden;
+  }
+
+  header {
+    text-align: center;
+    padding: 100px 20px 50px;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    color: #e91e63;
+    animation: fadeIn 2s ease-in;
+  }
+
+  header p {
+    font-size: 1.3rem;
+    color: #444;
+  }
+
+  .hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .heart {
+    position: absolute;
+    color: pink;
+    font-size: 20px;
+    animation: float 6s linear infinite;
+    opacity: 0.8;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0) rotate(0); opacity: 1; }
+    100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .timeline h2 {
+    color: #e91e63;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .photo {
+    margin: 20px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .photo img {
+    width: 100%;
+    display: block;
+  }
+
+  .quote {
+    background: #fff0f6;
+    border-radius: 20px;
+    padding: 20px;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 40px 0;
+    color: #d81b60;
+  }
+
+  footer {
+    text-align: center;
+    padding: 50px;
+    background: #ffccdc;
+    color: #333;
+    font-size: 1.2rem;
+    border-top: 2px solid #f8a1c4;
+  }
+</style>
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<header>
+  <h1>💖 For My Sweet wify, Haleema 💖</h1>
+  <p>You came into my life like a dream, and made everything so beautiful.</p>
+</header>
+
+<section class="timeline">
+  <h2>🌸 Our Love Story 🌸</h2>
+
+  <div class="photo"><img src="https://uploads.onecompiler.io/4439vzzn7/443aac7pp/Shona.jpg" alt="Haleema"></div>
+  <div class="quote">"We met in college... two souls, one heart."</div>
+
+  <div class="photo"><img src="https://uploads.onecompiler.io/4439vzzn7/443aac7pp/WhatsApp%20Image%202025-10-31%20at%2023.12.11_28bbec04.jpg" alt="Together"></div>
+  <div class="quote">"Every smile of yours makes my world brighter."</div>
+
+  <div class="photo"><img src="https://uploads.onecompiler.io/4439vzzn7/443aac7pp/WhatsApp%20Image%202025-10-31%20at%2023.12.10_259e0d95.jpg" alt="Love Moment"></div>
+  <div class="quote">"You’re not just my love, you’re my peace, my forever."</div>
+
+  <div class="photo"><img src="https://uploads.onecompiler.io/4439vzzn7/443aac7pp/WhatsApp%20Image%202025-10-31%20at%2023.13.05_4b45aa0f.jpg" alt="Beautiful Haleema"></div>
+  <div class="quote">"With you, I found my home, my heart, my Haleema ❤️"</div>
+</section>
+
+<footer>
+  With endless love,  
+  <br><strong>– Faraz 💌</strong>
+</footer>
+
+<script>
+  // Floating hearts animation
+  const hearts = document.querySelector('.hearts');
+  const colors = ['#ff99c8', '#ffb3d9', '#ff66a3', '#ff3385'];
+  function createHeart() {
+    const heart = document.createElement('div');
+    heart.className = 'heart';
+    heart.textContent = '💖';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = (4 + Math.random() * 4) + 's';
+    heart.style.color = colors[Math.floor(Math.random() * colors.length)];
+    hearts.appendChild(heart);
+    setTimeout(() => heart.remove(), 6000);
+  }
+  setInterval(createHeart, 300);
+</script>
+
+</body>
+</html>
